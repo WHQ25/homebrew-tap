@@ -11,7 +11,7 @@ class Rawgenai < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/WHQ25/rawgenai/releases/download/v0.1.0/rawgenai_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a07417a23a4df17c0d0402ad8a28009be45fecf85a361c199e591e7ba13639a7"
+      sha256 "1c8a68fedb6de213118b13ae98840659273fa427208c820738efadd80e0a4a2d"
 
       def install
         bin.install "rawgenai"
@@ -19,7 +19,7 @@ class Rawgenai < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/WHQ25/rawgenai/releases/download/v0.1.0/rawgenai_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c860949cfdda8e5b3a8bf158442461fb7e20aa7e77146b66e65bffee22529cd5"
+      sha256 "883adaffedb76bfc2d311907818906c6e8b37b34fa37a2f3ed7d81fa679b8bdf"
 
       def install
         bin.install "rawgenai"
@@ -30,7 +30,7 @@ class Rawgenai < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/WHQ25/rawgenai/releases/download/v0.1.0/rawgenai_0.1.0_linux_amd64.tar.gz"
-      sha256 "d438f3de48b70b91690ca9f1388ca100a1ab9df24be48e9f9158b78dac3c0769"
+      sha256 "8332a8e2954cf408c75eb3306bd52984ce3c9f170a1aa01ae67511e5caa6d095"
       def install
         bin.install "rawgenai"
       end
