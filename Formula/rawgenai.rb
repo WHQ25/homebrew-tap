@@ -5,21 +5,21 @@
 class Rawgenai < Formula
   desc "CLI tool for AI agents to access raw AI capabilities (TTS, STT, Image, Video)"
   homepage "https://github.com/WHQ25/rawgenai"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/WHQ25/rawgenai/releases/download/v0.3.0/rawgenai_0.3.0_darwin_amd64.tar.gz"
-      sha256 "e3253e1cd1ddf20b833dfd04c8dfe8d8daa6d22fc03e96eebba11b3f5b84c2d7"
+      url "https://github.com/WHQ25/rawgenai/releases/download/v0.4.0/rawgenai_0.4.0_darwin_amd64.tar.gz"
+      sha256 "c5374ab320710a17da5434e6c5ee6c854d5e2f685972f65abc6b8ea787ccd1f5"
 
       def install
         bin.install "rawgenai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/WHQ25/rawgenai/releases/download/v0.3.0/rawgenai_0.3.0_darwin_arm64.tar.gz"
-      sha256 "6303fe25d91c885fb8bab49fddd0af33f07a57d7d52502699862c9eff839855c"
+      url "https://github.com/WHQ25/rawgenai/releases/download/v0.4.0/rawgenai_0.4.0_darwin_arm64.tar.gz"
+      sha256 "42866c8a9608eb67b1e2dd2684505390b042e6f484167f6fa0bc046f7836d301"
 
       def install
         bin.install "rawgenai"
@@ -29,8 +29,8 @@ class Rawgenai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/WHQ25/rawgenai/releases/download/v0.3.0/rawgenai_0.3.0_linux_amd64.tar.gz"
-      sha256 "cc009c7eba76b8fa0953f868c87e3e23f2e0ec7554b744ca5fc05a9c46cb0446"
+      url "https://github.com/WHQ25/rawgenai/releases/download/v0.4.0/rawgenai_0.4.0_linux_amd64.tar.gz"
+      sha256 "3e2655db3bdbad8274837c72e7e26345a68f27e6c0244c47326dccb0f427961e"
       def install
         bin.install "rawgenai"
       end
